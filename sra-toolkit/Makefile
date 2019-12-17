@@ -8,7 +8,7 @@ SHELL=/bin/bash
 
 USERNAME?=ncbi
 IMG=sra-toolkit
-VERSION?=2.9.2
+VERSION?=2.10.0
 
 build:
 	docker build --build-arg version=${VERSION} -t ${USERNAME}/${IMG}:${VERSION} .
